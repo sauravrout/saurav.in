@@ -6,6 +6,10 @@
 trigger:
 - main
 
+parameters:
+ - name: testParam
+   default: sauravrout
+
 pool:
   vmImage: ubuntu-latest
 
@@ -22,4 +26,5 @@ steps:
     whoami
     hostname
     pwd
+    echo ${{ parameters.sauravrout }}
   displayName: 'Unix Params'
