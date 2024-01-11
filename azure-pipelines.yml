@@ -22,4 +22,5 @@ steps:
     whoami
     hostname
     pwd
+    . ./script.sh
   displayName: 'Unix Params'
